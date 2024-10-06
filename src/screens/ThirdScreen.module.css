@@ -1,0 +1,19 @@
+.center{
+    display: flex
+    ;justify-content: center;
+    align-items: center;
+    margin:2% auto;
+    flex-direction: row;
+    direction: rtl;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+}
+
+.title {
+    font-family: 'Assistant';
+    font-size: 2.25rem;
+    direction: rtl;
+    margin:2% auto;
+    text-align: center; 
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}

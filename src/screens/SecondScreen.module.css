@@ -1,0 +1,127 @@
+/* SecondScreen.module.css */
+.container {
+  max-width: 1200px;
+  margin: 2% auto;
+  direction: rtl;
+  padding: 0 20px;
+
+}
+
+.mainTitle, .solutionTitle {
+  text-align: center;
+  font-family: "Assistant";
+  margin: 2% auto;
+  font-size: 1.8rem;
+  color: #4a4a4a;
+}
+
+.concernsContainer, .solutionsContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px auto;
+}
+
+.pairContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1000px;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  width: calc(50% - 10px);
+  margin-bottom: 20px;
+  border-radius: 10px;
+  padding: 15px;
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.item:nth-child(4n+1) {
+  background: linear-gradient(135deg, #ffffff, #faf0f4);
+}
+
+.item:nth-child(4n+2) {
+  background: linear-gradient(135deg, #fcfcfc, #f7e8ee);
+}
+
+.item:nth-child(4n+3) {
+  background: linear-gradient(135deg, #f9f9f9, #f5e0e8);
+}
+
+.item:nth-child(4n) {
+  background: linear-gradient(135deg, #f7f7f7, #f2d8e2);
+}
+
+.itemImage {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 50%;
+  flex-shrink: 0;
+  margin-left: 15px;
+}
+
+.item p {
+  flex: 1;
+  font-family: "AssistantR";
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #4a4a4a;
+}
+
+.item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 15px;
+  }
+
+  .item {
+    padding: 12px;
+  }
+
+  .itemImage {
+    width: 50px;
+    height: 50px;
+    margin-left: 12px;
+  }
+
+  .item p {
+    font-size: 1.15rem;
+  }
+
+  .mainTitle, .solutionTitle {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .item {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .itemImage {
+    width: 45px;
+    height: 45px;
+    margin-left: 10px;
+  }
+
+  .item p {
+    font-size: 1.1rem;
+  }
+
+  .mainTitle, .solutionTitle {
+    font-size: 1.4rem;
+  }
+}
