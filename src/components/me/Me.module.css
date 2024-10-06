@@ -58,14 +58,10 @@
     font-size: 1.25em;
       color: #281916;
     margin-bottom: 10px;
-    text-align: right;
+  
     font-family: "Assistant";
   }
-  .mac{
-    width: 100%;
-    object-fit: cover;
 
-  }
   .center{
     width:150px;
     display: flex;

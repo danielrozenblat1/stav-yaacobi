@@ -1,6 +1,7 @@
 .container {
+  max-width: 1200px;
   margin: 0 auto;
-  padding: 0.2rem;
+  padding: 2rem;
   direction: rtl;
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
@@ -16,7 +17,7 @@
   color: #e75480;
   font-family: 'Assistant', sans-serif;
   text-align: center;
-  margin: 5px auto;
+  margin: 1rem 0;
   text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
 }
 
@@ -24,40 +25,45 @@
   font-size: 1.5rem;
   font-family: 'Assistant', sans-serif;
   text-align: center;
-  margin: 5px auto;
+  margin: 0.5rem 0;
   width: 95%;
   direction: rtl;
   text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
 }
 
 .mainContent {
+  width: 100%;
+  margin: 2rem 0;
+}
+
+.grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
   justify-content: center;
-  margin-right: 10%;
 }
 
 .section {
   background: rgba(255,255,255,0.7);
   border-radius: 15px;
-  padding: 1.5rem;
-  margin: 2% auto;
-  box-shadow: inset 0 0 10px rgba(0,0,0,0.1);
+  padding: 2rem;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
 }
 
 .sectionTitle {
   font-size: 2.2rem;
   color: #D8A0A6;
   margin-bottom: 1.5rem;
-  text-align: right;
+  text-align: center;
   text-shadow: 2px 2px 3px rgba(0,0,0,0.1);
-  padding-right: 2.5rem;
 }
 
 .list {
   list-style-type: none;
-  padding-left: 0;
+  padding: 0;
+  margin: 0;
 }
 
 .listItem {
@@ -74,117 +80,48 @@
   color: #e75480;
 }
 
-.imageContainer {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.icon {
+  color: #e75480;
   margin: 1rem 0;
 }
 
-.image {
-  width: 100%;
-  height: 70vh; /* 70% של גובה החלון */
-  object-fit: cover;
-  border-radius: 15px;
-  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
-  filter: brightness(1.1) contrast(1.1);
-}
-
 /* Responsive styles */
-@media (max-width: 1250px) {
-  .title {
-    font-size: 2.8rem;
-  }
-  .subtitle {
-    font-size: 1.3rem;
-  }
-}
-
-@media (max-width: 1050px) {
-  .title {
-    font-size: 2.6rem;
-  }
-  .subtitle {
-    font-size: 1.2rem;
-  }
-  .sectionTitle {
-    font-size: 2rem;
-  }
-}
-
-@media (max-width: 850px) {
-  .title {
-    font-size: 2.4rem;
-  }
-  .subtitle {
-    font-size: 1.1rem;
-  }
-  .sectionTitle {
-    font-size: 1.8rem;
-  }
-  .listItem {
-    font-size: 1.1rem;
-  }
-  .image {
-    height: 60vh; /* מעט נמוך יותר במסכים קטנים יותר */
-  }
-}
-
-@media (max-width: 650px) {
-  .title {
-    font-size: 2.2rem;
-  }
-  .subtitle {
-    font-size: 1rem;
-  }
-  .sectionTitle {
-    font-size: 1.6rem;
-  }
-  .listItem {
-    font-size: 1rem;
-  }
-}
-
-@media (max-width: 550px) {
+@media (max-width: 768px) {
   .container {
-    padding: 0.5rem;
+    padding: 1rem;
   }
+
   .title {
+    font-size: 2.5rem;
+  }
+
+  .subtitle {
+    font-size: 1.3rem;
+  }
+
+  .sectionTitle {
     font-size: 2rem;
   }
-  .subtitle {
-    font-size: 0.9rem;
-  }
-  .mainContent {
-    grid-template-columns: 1fr;
-    margin-right: 0;
-  }
-  .sectionTitle {
-    font-size: 1.4rem;
-  }
+
   .listItem {
-    font-size: 0.9rem;
-  }
-  .image {
-    height: 50vh; /* עוד יותר נמוך במסכים קטנים מאוד */
+    font-size: 1.1rem;
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 480px) {
   .title {
+    font-size: 2rem;
+  }
+
+  .subtitle {
+    font-size: 1.1rem;
+  }
+
+  .sectionTitle {
     font-size: 1.8rem;
   }
-  .subtitle {
-    font-size: 0.8rem;
-  }
-  .sectionTitle {
-    font-size: 1.3rem;
-  }
+
   .listItem {
-    font-size: 0.8rem;
-  }
-  .image {
-    height: 40vh; /* הנמוך ביותר במסכים הקטנים ביותר */
+    font-size: 1rem;
   }
 }

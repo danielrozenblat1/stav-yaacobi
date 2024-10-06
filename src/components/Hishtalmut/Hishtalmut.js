@@ -1,27 +1,28 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import styles from './Hishtalmut.module.css';
-import hishytalmut from "../../images/השתלמויות.jpeg";
-import { Briefcase, Heart, Target, Palette,  Sun, ChevronDown } from 'lucide-react';
+import { Briefcase, Heart, Target, Palette, Sun, ChevronDown } from 'lucide-react';
 
 function Hishtalmut() {
-  return <>
+
  
-    <div className={styles.container} >
-    <p className={styles.subtitle}id="מאפרת">
+  return (
+    <div className={styles.container}>
+      <p className={styles.subtitle} id="מאפרת">
         את מאפרת ואת מרגישה שיש נקודות בעסק שלך שאת צריכה להשתפר בהן?
       </p>
       <p className={styles.subtitle}>
-     הסדנה הבאה בדיוק בשבילך
+        הסדנה הבאה בדיוק בשבילך
       </p>
-     
-    <ChevronDown className={styles.icon} size={36}/>
+      
+      <ChevronDown className={styles.icon} size={36}/>
+      
       <h1 className={styles.title}>סדנת איפור אישית</h1>
       <p className={styles.subtitle}>
-         סדנה 1:1 במשך 3 שעות בה תרכשי כלים וטכניקות שונות כיצד להתאפר בצורה הנכונה לך
+        סדנה 1:1 במשך 3 שעות בה תרכשי כלים וטכניקות שונות כיצד להתאפר בצורה הנכונה לך
       </p>
       
       <main className={styles.mainContent}>
-        <div>
+        <div className={styles.grid}>
           <section className={styles.section}>
             <h2 className={styles.sectionTitle}>סדר והבנה</h2>
             <ul className={styles.list}>
@@ -58,13 +59,9 @@ function Hishtalmut() {
             </ul>
           </section>
         </div>
-        
-        <div className={styles.imageContainer}>
-          <img src={hishytalmut} alt="הדגמת איפור" className={styles.image} />
-        </div>
       </main>
     </div>
-    </>
+  );
 }
 
 export default Hishtalmut;
