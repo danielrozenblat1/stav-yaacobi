@@ -1,7 +1,7 @@
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 1rem;
   direction: rtl;
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
@@ -14,8 +14,8 @@
 
 .title {
   font-size: 3rem;
-  color: #e75480;
-  font-family: 'Assistant', sans-serif;
+  color: #D8A0A6;
+  font-family: 'Assistant';
   text-align: center;
   margin: 1rem 0;
   text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
@@ -23,7 +23,7 @@
 
 .subtitle {
   font-size: 1.5rem;
-  font-family: 'Assistant', sans-serif;
+  font-family: 'Assistant';
   text-align: center;
   margin: 0.5rem 0;
   width: 95%;
@@ -70,7 +70,7 @@
   margin-bottom: 1rem;
   font-size: 1.3rem;
   display: flex;
-  font-family: 'AssistantR', sans-serif;
+  font-family: 'AssistantR';
   align-items: center;
   text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
 }
@@ -81,14 +81,14 @@
 }
 
 .icon {
-  color: #e75480;
+ 
   margin: 1rem 0;
 }
 
 /* Responsive styles */
 @media (max-width: 768px) {
   .container {
-    padding: 1rem;
+    padding: 0.5rem;
   }
 
   .title {
@@ -120,7 +120,9 @@
   .sectionTitle {
     font-size: 1.8rem;
   }
-
+  .container {
+    padding: 0.5rem;
+  }
   .listItem {
     font-size: 1rem;
   }
