@@ -7,15 +7,15 @@ function Hishtalmut() {
     <div className={styles.container}>
       <div className={styles.openingSection}>
         <h2 className={styles.openingQuestion} id="מאפרת">מאפרת או מעצבת שיער?</h2>
-        <p className={styles.subQuestion}>מרגישה שיש נקודות בעסק שאת צריכה להתחזק?</p>
+        <p className={styles.subQuestion}>מרגישה שיש נקודות בעסק שאת צריכה להתחזק בהן?</p>
         <p className={styles.invitation}>אני מזמינה אותך להשתלמות 1:1 בת 3 שעות</p>
         <p className={styles.noSecrets}>בלי סודות</p>
       </div>
-      <h2 className={styles.openingQuestion}>אצלי תקבלי את</h2>
+      <h2 className={styles.openingQuestion}>שתקבלי בה </h2>
       <div className={styles.iconSection}>
         <div className={styles.iconItem}>
           <Settings className={styles.icon} size={24} />
-          <p>כל הכלים הפרקטיים לעבודה עם לקוחות וכלות הכוללת הדגמה שלי וזמן תרגול שלך</p>
+          <p>את כל הכלים הפרקטיים לעבודה עם לקוחות וכלות הכוללת הדגמה שלי וזמן תרגול שלך</p>
         </div>
         <div className={styles.iconItem}>
           <Settings className={styles.icon} size={24} />
