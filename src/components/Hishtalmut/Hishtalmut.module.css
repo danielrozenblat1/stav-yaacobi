@@ -1,7 +1,7 @@
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 1rem;
+  padding: 0.5rem;
   direction: rtl;
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
@@ -19,7 +19,7 @@
 
 .openingQuestion {
   font-size: 2.5rem;
-  color: #D8A0A6;
+
   font-family: "Assistant";
   text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
   margin-bottom: 1rem;
@@ -34,7 +34,7 @@
 
 .invitation {
   font-size: 1.5rem;
-  color: #D8A0A6;
+
   width:90%;
   text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
   margin: 1% auto;
@@ -44,7 +44,7 @@
 .noSecrets {
   font-size: 1.8rem;
   color: #fff;
-  margin:2% auto;
+  margin:2rem auto 0;
   font-weight: bold;
   background-color: #D8A0A6;
   text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
