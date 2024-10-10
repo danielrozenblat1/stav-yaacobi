@@ -12,13 +12,13 @@ import secure from "../images/בטחון.png"
 const SecondScreen = () => {
   const concerns = [
     { text: "שלא יהיו קשובים לצרכים ולדגשים שלך", image: listen },
-    { text: "שהאיפור ייצא גס ולא תואם לפנים שלך", image: over }
+    { text: "שהאיפור ייצא גס ולא תואם לך", image: over }
   ];
 
   const solutions = [
-    { text: "להבין איזה סוג איפור את מחפשת", image: makeup },
-    { text: "לתאם איתך ציפיות כדי שתדעי מה את מקבלת", image: withYou},
-    { text: "להוריד סטרס לפני החופה (אני גם מצחיקה בנוסף :) ) לעמוד בזמנים ולהיות לצדך לאורך היום החשוב בחייך", image: happy},
+    { text: "להבין איזה סגנון איפור ושיער את מחפשת", image: makeup },
+    { text: "לתאם איתך ציפיות כדי להבין בדיוק איך את הולכת להראות", image: withYou},
+    { text: "להוריד סטרס גם לפני החופה לעמוד בזמנים ולהיות לצדך לאורך היום החשוב בחייך", image: happy},
     { text: "להיות זמינה לכל שאלה,חשש והתייעצויות", image: questions },
     { text: "לתת לך בטחון!", image: secure }
   ];

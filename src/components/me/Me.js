@@ -1,13 +1,13 @@
 import React from 'react';
 import styles from './Me.module.css';
-import sharon from "../../images/סתיו יעקבי.png"
+import stav from "../../images/סתיו יעקבי תדמית.png"
 import Button from "../button/Button"
 const AboutMe = () => {
   return <>
       <div className={styles.header} id="מי אני">קצת עלי</div>
     <div className={styles.container}>
       <div className={styles.imageContainer}>
-        <img src={sharon} alt="סתיו יעקבי" className={styles.image} />
+        <img src={stav} alt="סתיו יעקבי" className={styles.image} />
       </div>
       <div className={styles.content}>
         <h1 className={styles.title}>סתיו יעקובי</h1>

@@ -1,17 +1,38 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import styles from './Hishtalmut.module.css';
-import { Briefcase, Heart, Target, Palette, Sun, ChevronDown } from 'lucide-react';
+import { Briefcase, Heart, Target, Palette, Sun, ChevronDown,  Settings, Compass } from 'lucide-react';
 
 function Hishtalmut() {
-
- 
   return (
     <div className={styles.container}>
-      <p className={styles.subtitle} id="מאפרת">
-        את מאפרת ואת מרגישה שיש נקודות בעסק שלך שאת צריכה להשתפר בהן?
+      <div className={styles.openingSection}>
+        <h2 className={styles.openingQuestion} id="מאפרת">מאפרת או מעצבת שיער?</h2>
+        <p className={styles.subQuestion}>מרגישה שיש נקודות בעסק שאת צריכה להתחזק?</p>
+        <p className={styles.invitation}>אני מזמינה אותך להשתלמות 1:1 בת 3 שעות</p>
+        <p className={styles.noSecrets}>בלי סודות</p>
+      </div>
+      <h2 className={styles.openingQuestion}>אצלי תקבלי את</h2>
+      <div className={styles.iconSection}>
+        <div className={styles.iconItem}>
+          <Settings className={styles.icon} size={24} />
+          <p>כל הכלים הפרקטיים לעבודה עם לקוחות וכלות הכוללת הדגמה שלי וזמן תרגול שלך</p>
+        </div>
+        <div className={styles.iconItem}>
+          <Settings className={styles.icon} size={24} />
+          <p>סדנא שמותאמת בדיוק לצרכים שלך</p>
+        </div>
+        <div className={styles.iconItem}>
+          <Settings className={styles.icon} size={24} />
+          <p>ליווי אישי שלי בהמשך הדרך במידת הצורך.</p>
+        </div>
+      </div>
+      
+      <p className={styles.subtitle} >
+      את לא מאפרת מקצועית 
+      אבל כן רוצה לדעת להתאפר ברמה גבוהה?
       </p>
       <p className={styles.subtitle}>
-        הסדנה הבאה בדיוק בשבילך
+        ההשתלמות הבאה בדיוק בשבילך
       </p>
       
       <ChevronDown className={styles.icon} size={36}/>
