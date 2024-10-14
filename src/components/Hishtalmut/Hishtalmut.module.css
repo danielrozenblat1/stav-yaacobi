@@ -29,7 +29,8 @@
   font-size: 1.4rem;
   color: #222;
   margin: 2% auto;
-  font-weight: 300;
+ font-family: "AssistantR";
+ width:90%;
 }
 
 .invitation {
