@@ -1,0 +1,144 @@
+.container {
+  max-width: 1200px;
+  margin: 3% auto;
+  padding: 3rem 2rem;
+  background: linear-gradient(135deg, #f9f1f3, #f5e8ec);
+}
+
+.stepsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  gap: 2.5rem;
+  direction: rtl;
+}
+
+.stepContainer {
+  width: 280px;
+  position: relative;  
+  margin: 3% auto;
+  padding: 2.5rem 2rem;
+  border-radius: 15px;
+  border: 1px solid rgba(252, 229, 229, 0.401);
+  overflow: hidden;
+  transition: all 0.4s ease;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+ 
+  box-shadow: 
+    0 10px 30px rgba(0, 0, 0, 0.1),
+    inset 0 0 15px rgba(255, 255, 255, 0.5);
+}
+
+.stepContainer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.4) 0%,
+    rgba(255, 255, 255, 0.1) 100%
+  );
+  z-index: 1;
+  opacity: 0.7;
+  transition: opacity 0.4s ease;
+}
+
+.stepContainer:hover {
+  transform: translateY(-5px) scale(1.02);
+  box-shadow: 
+    0 15px 40px rgba(0, 0, 0, 0.15),
+    inset 0 0 20px rgba(255, 255, 255, 0.8);
+}
+
+.stepContainer:hover::before {
+  opacity: 0.9;
+}
+
+.stepContainer::after {
+  content: attr(data-number);
+  position: absolute;
+  top: -15px;
+  right: 10px;
+  font-family: 'Assistant', sans-serif;
+  font-size: 8rem;
+  font-weight: 700;
+  color: rgba(216, 180, 190, 0.3);
+  line-height: 1;
+  transform: rotate(5deg);
+  text-shadow: 
+    2px 2px 3px rgba(0, 0, 0, 0.05),
+    -2px -2px 3px rgba(255, 255, 255, 0.5);
+  z-index: 0;
+  transition: all 0.4s ease;
+}
+
+.stepContainer:hover::after {
+  transform: rotate(5deg) scale(1.05);
+  color: rgba(216, 180, 190, 0.4);
+}
+
+.content {
+  position: relative;
+  z-index: 2;
+}
+
+.title {
+  font-family: 'Assistant', sans-serif;
+  color: #8e5c6a;
+  margin-bottom: 1rem;
+  font-size: 1.7rem;
+  font-weight: 600;
+  text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5);
+  transition: color 0.3s ease;
+}
+
+.stepContainer:hover .title {
+  color: #7a4e5a;
+}
+
+.description {
+  font-family: 'AssistantR', sans-serif;
+  color: #6a4a52;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  transition: color 0.3s ease;
+}
+
+.stepContainer:hover .description {
+  color: #5a3d44;
+}
+
+@media (max-width: 767px) {
+  .stepContainer {
+    width: 100%;
+    max-width: 280px;
+  }
+  .stepContainer::after {
+    font-size: 7rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 2rem 1rem;
+  }
+  .stepContainer {
+    padding: 2rem 1.5rem;
+  }
+  .stepContainer::after {
+    font-size: 6rem;
+    top: -10px;
+    right: 5px;
+  }
+  .title {
+    font-size: 1.5rem;
+  }
+  .description {
+    font-size: 1rem;
+  }
+}

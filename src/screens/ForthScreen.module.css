@@ -1,0 +1,25 @@
+.title {
+    font-family: 'Assistant';
+    font-size: 2.5rem;
+    direction: rtl;
+    margin:2% auto;
+    text-align: center; 
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+@media (max-width: 350px) {
+
+
+    .title {
+        font-size: 1.75rem;
+        margin: 1% auto;
+    }
+}
+
+@media (min-width: 350px) and (max-width: 450px) {
+   
+
+    .title {
+        font-size: 2rem;
+        margin: 1.5% auto;
+    }
+}

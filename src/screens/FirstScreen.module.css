@@ -1,0 +1,226 @@
+.container {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.center{
+    display: flex;
+    width:30%;
+    margin:2% auto;
+    justify-content: center;
+}
+.image{
+    object-fit: contain;
+    width: 100%;
+}
+.imageContainer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.backgroundImage {
+    flex: 1;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.centerImage {
+    background-image: url('../images/סתיו יעקבי.png');
+}
+
+.leftImage, .rightImage {
+    display: none;
+}
+
+.content {
+    text-align: center;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    border-radius: 1.5rem;
+    width: 90%;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    position: absolute;
+    bottom: 20%; /* This places the container 10% from the bottom of the screen */
+    left: 50%;
+    transform: translateX(-50%);
+    overflow: hidden;
+    z-index: 1;
+    animation: containerFadeIn 1.5s ease-out;
+}
+
+.content::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 100%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255,255,255,0.05) 0%, rgba(255,255,255,0) 70%);
+    transform: rotate(30deg);
+}
+
+.title {
+    font-family: 'Assistant';
+    font-size: 2.25rem;
+    direction: rtl;
+    margin-bottom: 0;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    animation: titleFadeIn 1.5s ease-out 0.5s both;
+}
+
+.subtitle {
+    font-family: 'Assistant';
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+    color: rgb(255, 255, 255);
+    direction: rtl;
+    animation: titleFadeIn 1.5s ease-out 1s both;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.who {
+    font-family: 'AssistantR';
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    direction: rtl;
+    color: rgb(255, 255, 255);
+}
+
+.icon {
+    margin: 0 auto;
+    color: white;
+    animation: upDown 2s ease-in-out infinite, arrowFadeIn 1.5s ease-out 1.5s both;
+}
+
+@keyframes upDown {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+@keyframes containerFadeIn {
+    from {
+        opacity: 0;
+        transform: translate(-50%, 20px);
+    }
+    to {
+        opacity: 1;
+        transform: translate(-50%, 0);
+    }
+}
+
+@keyframes titleFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes arrowFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 0.8;
+        transform: translateY(0);
+    }
+}
+
+@media (min-width: 350px) {
+    .content {
+        width: 85%;
+    }
+}
+
+@media (min-width: 450px) {
+    .content {
+        width: 80%;
+    }
+}
+
+@media (min-width: 550px) {
+    .content {
+        width: 75%;
+    }
+    
+    .imageContainer {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .backgroundImage {
+        flex: 1;
+    }
+    
+    .leftImage, .rightImage {
+        display: block;
+    }
+    
+    .leftImage {
+        background-image: url('../images/סתיו יעקבי כלה צד שמאל.png');
+    }
+    
+    .rightImage {
+        background-image: url('../images/סתיו יעקבי כלה צד ימין.png');
+    }
+}
+
+@media (min-width: 650px) {
+    .content {
+        width: 70%;
+    }
+}
+
+@media (min-width: 750px) {
+    .content {
+        width: 65%;
+    }
+}
+
+@media (min-width: 850px) {
+    .content {
+        width: 60%;
+    }
+}
+
+@media (min-width: 950px) {
+    .content {
+        width: 55%;
+    }
+}
+
+@media (min-width: 1050px) {
+    .content {
+        width: 50%;
+    }
+}
+
+@media (min-width: 1150px) {
+    .content {
+        width: 45%;
+    }
+}
+
+@media (min-width: 1250px) {
+    .content {
+        width: 33%;
+    }
+}
